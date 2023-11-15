@@ -1,0 +1,48 @@
+
+<html>
+
+<style>
+
+  a {
+    color: orange;
+  }
+
+</style>
+
+<script src="https://nagarro137-dev-ed.develop.lightning.force.com/lightning/lightning.out.js"></script>
+
+<div data-lightning-out="true"></div>
+
+  <script>
+
+    const appName = 'c:OptOutFormWrapper';
+    const componentName = 'c:optoutForm';
+    const lightningEndpoint = 'https://nagarro137-dev-ed.develop.lightning.force.com';     
+    const targetElement = document.querySelector("[data-lightning-out]");
+    const sessionId = '00D5h000008uC0z!AR0AQEBDSida9VkzeInvaAq9YleTH4FLysAyQxxYQcMAjf1DprUKKpq6BrsdDOhMe60ZcUjSfAA3iRBNmlB.Zi7BiURvqTHz';
+    const newsession = '00D5h000008uC0zEAE!AR0AQC8ovWJq0BBz.._DxRAS7sYcCTkEN_XjFwlqOaDJmvsaCn0t_30k4wuOyXYUBv6tXpx7jKlOC24MTemZO.q_AbT0Vtfq';
+    const componentAttributes = {
+
+    };
+
+    $Lightning.use(
+            appName,
+            function (){
+              $Lightning.createComponent(
+                      componentName,
+                      componentAttributes,
+                      targetElement,
+                      function (cmp){
+                        console.log('lightning component created');
+                      }
+              );
+            },
+            lightningEndpoint, 
+            newsession
+    );
+
+
+  </script>
+
+
+</html>
